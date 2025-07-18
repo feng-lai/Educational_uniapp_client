@@ -1,0 +1,242 @@
+{
+	"pages": [ {
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+			}
+
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}
+
+	    ,{
+            "path" : "pages/mine/mine",
+            "style" :                                                                                    
+            {
+                "navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/consult/consult",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/semester/semester",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "初一语文",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/question/question",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "课前练",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/question/result",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "测试总结",
+		        "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#46d17e",
+				"navigationBarTextStyle":"white"
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/video/cate",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom" 
+            }
+            
+        }
+        ,{
+            "path" : "pages/course/course",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/upload/upload",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "资料上传",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/score/score",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "积分明细",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/introduction/introduction",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "小猿预习",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/customer_service/customer_service",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "官方客服",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user_info/user_info",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "资料设置",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/achievement/achievement",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "成就",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/information/information",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "资讯",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/information/detail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "资讯详情",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},{
+		    "path" : "pages/video/detail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "名师视频详情",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},{
+		    "path" : "pages/course/detail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "课程详情",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},{
+		    "path" : "pages/video/video",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "更多",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/banner/banner",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/lesson/content",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#c6c6c6",
+		"selectedColor": "#434343",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/image/tarbar01.png",
+			"selectedIconPath": "static/image/tarbar01s.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/video/cate",
+			"iconPath": "static/image/tarbar02.png",
+			"selectedIconPath": "static/image/tarbar02s.png",
+			"text": "名师"
+		}, {
+			"pagePath": "pages/information/information",
+			"iconPath": "static/image/tarbar03.png",
+			"selectedIconPath": "static/image/tarbar03s.png",
+			"text": "资讯"
+		}, {
+			"pagePath": "pages/mine/mine",
+			"iconPath": "static/image/tarbar04.png",
+			"selectedIconPath": "static/image/tarbar04s.png",
+			"text": "我的"
+		}]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

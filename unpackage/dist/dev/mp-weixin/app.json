@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/consult/consult",
+    "pages/semester/semester",
+    "pages/question/question",
+    "pages/question/result",
+    "pages/video/cate",
+    "pages/course/course",
+    "pages/upload/upload",
+    "pages/score/score",
+    "pages/introduction/introduction",
+    "pages/customer_service/customer_service",
+    "pages/user_info/user_info",
+    "pages/achievement/achievement",
+    "pages/information/information",
+    "pages/information/detail",
+    "pages/video/detail",
+    "pages/course/detail",
+    "pages/video/video",
+    "pages/banner/banner",
+    "pages/lesson/content"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#c6c6c6",
+    "selectedColor": "#434343",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/tarbar01.png",
+        "selectedIconPath": "static/image/tarbar01s.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/video/cate",
+        "iconPath": "static/image/tarbar02.png",
+        "selectedIconPath": "static/image/tarbar02s.png",
+        "text": "名师"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "iconPath": "static/image/tarbar03.png",
+        "selectedIconPath": "static/image/tarbar03s.png",
+        "text": "资讯"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/image/tarbar04.png",
+        "selectedIconPath": "static/image/tarbar04s.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取用户位置展示相关学习资料信息"
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

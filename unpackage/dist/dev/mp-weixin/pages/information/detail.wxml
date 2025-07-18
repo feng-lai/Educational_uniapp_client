@@ -1,0 +1,1 @@
+<view><view class="title">{{info.title}}</view><view class="cate"><text>{{info.name}}</text></view><rich-text class="content" nodes="{{info.content}}"></rich-text></view>

@@ -1,0 +1,108 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/video/video",
+          "pathName": "pages/video/video",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/question/result",
+          "pathName": "pages/question/result",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/semester/semester",
+          "pathName": "pages/semester/semester",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/question/question",
+          "pathName": "pages/question/question",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/question/result",
+          "pathName": "pages/question/result",
+          "query": "id=10",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "id=10",
+          "scene": null
+        },
+        {
+          "name": "pages/course/course",
+          "pathName": "pages/course/course",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mine/mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/score/score",
+          "pathName": "pages/score/score",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user_info/user_info",
+          "pathName": "pages/user_info/user_info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/information/detail",
+          "pathName": "pages/information/detail",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "pages/upload/upload",
+          "pathName": "pages/upload/upload",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/video/detail",
+          "pathName": "pages/video/detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/course/detail",
+          "pathName": "pages/course/detail",
+          "query": "id=1",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

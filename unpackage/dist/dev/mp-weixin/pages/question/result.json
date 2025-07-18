@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "测试总结",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#46d17e",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "cmd-progress": "/components/cmd-progress/cmd-progress"
+  }
+}

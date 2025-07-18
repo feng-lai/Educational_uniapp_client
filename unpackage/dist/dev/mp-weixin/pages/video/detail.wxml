@@ -1,0 +1,1 @@
+<view><block wx:if="{{vis}}"><view class="video"><video src="{{info.video}}" poster="{{v.img}}"></video></view></block><view class="content"><view class="title">{{info.title}}</view><view class="cate"><text>{{info.name}}</text></view><rich-text class="content" nodes="{{info.content}}"></rich-text></view></view>

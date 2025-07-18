@@ -1,0 +1,166 @@
+<template>
+	<view>
+		<view class="top" :style="'top:'+menuButtonInfo.top+'px; height:'+menuButtonInfo.height+'px; line-height:'+menuButtonInfo.height+'px;'">
+			<uni-icons type="arrowleft" color="#ffffff" size="26"></uni-icons>
+		</view>
+		<view class="banner">
+			<swiper class="swiper" :autoplay="autoplay" :interval="interval" :duration="duration" :circular="circular"
+				:indicator-dots="indicatorDots" :indicator-color="indicatorColor"
+				:indicator-active-color="indicatorActiveColor">
+				<block v-for="(v, k) in banner">
+					<swiper-item>
+						<navigator class="swiper-item" hover-class="none">
+							<image :src="v.img" mode="aspectFill"/>
+						</navigator>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+		<view class="part">
+			<view class="title">
+				<text class="first">数</text>
+				<text>[2021春半程]高一数学系统2班</text>
+			</view>
+			<view class="content">
+				<image src="../../static/image/border_l.png"></image>
+				<view class="name">
+					<text class="first">面授+直播</text>
+					<text>翰林教育</text>
+					<text>刘淼淼</text>
+				</view>
+				<view class="address">
+					<image src="../../static/image/address2.png"></image>
+					<text>江西省南昌市红谷滩区丰和中大道166号华兴文化广场1号楼4楼红谷滩翠苑路205</text>
+					<image src="../../static/image/address3.png"></image>
+				</view>
+				<view class="time">
+					<image src="../../static/image/time.png"></image>
+					<text>2021/06/25 至 2021/07/25</text>
+				</view>
+			</view>
+		</view>
+		<view class="sylla">
+			<view class="title">教程大纲</view>
+			<view class="entry">
+				<view class="row">
+					<view class="left">
+						01
+					</view>
+					<view class="right">
+						<view class="desc">阅读理解(社会文化)语法填空精炼3阅读理解(社会文化)语法填空精炼3</view>
+						<view class="time">
+							<image src="../../static/image/time2.png"></image>
+							<text>05-16 08:00 上课</text>
+						</view>
+					</view>
+					<view class="clear"></view>
+				</view>
+				<view class="row">
+					<view class="left">
+						02
+					</view>
+					<view class="right">
+						<view class="desc">阅读理解(社会文化)语法填空精炼3阅读理解(社会文化)语法填空精炼3</view>
+						<view class="time">
+							<image src="../../static/image/time2.png"></image>
+							<text>05-16 08:00 上课</text>
+						</view>
+					</view>
+					<view class="clear"></view>
+				</view>
+				<view class="row">
+					<view class="left">
+						03
+					</view>
+					<view class="right">
+						<view class="desc">阅读理解(社会文化)语法填空精炼3阅读理解(社会文化)语法填空精炼3</view>
+						<view class="time">
+							<image src="../../static/image/time2.png"></image>
+							<text>05-16 08:00 上课</text>
+						</view>
+					</view>
+					<view class="clear"></view>
+				</view>
+				<view class="row">
+					<view class="left">
+						04
+					</view>
+					<view class="right">
+						<view class="desc">阅读理解(社会文化)语法填空精炼3阅读理解(社会文化)语法填空精炼3</view>
+						<view class="time">
+							<image src="../../static/image/time2.png"></image>
+							<text>05-16 08:00 上课</text>
+						</view>
+					</view>
+					<view class="clear"></view>
+				</view>
+			</view>
+		</view>
+		<view class="bottom">
+			<navigator class="left" hover-class="none" open-type="navigateBack">
+				<uni-icons type="arrowleft" size="20" color="#6d6e80"></uni-icons>
+			</navigator>
+			<view class="left">
+				<view class="row">
+					<view><image src="../../static/image/share.png"></image></view>
+					<view>分享</view>
+				</view>
+			</view>
+			<view class="left">
+				<view class="row">
+					<view><image src="../../static/image/listen.png"></image></view>
+					<view>试听</view>
+				</view>
+			</view>
+			<view class="right">
+				<text>报名</text>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+	const app = getApp()
+	var that
+	export default {
+		data() {
+			return {
+				autoplay: true,
+				interval: 2000,
+				duration: 500,
+				circular: true,
+				banner: {},
+				menuButtonInfo:'',
+				info:''
+			}
+		},
+		onLoad() {
+			that = this
+		},
+		methods: {
+			//banner信息
+			getBanner() {
+				uni.request({
+					url: app.globalData.url + 'banner',
+					success(res) {
+						that.banner = res.data.data
+					}
+				})
+			},
+			getInfo(){
+				uni.request({
+					url:app.globalData.url+'course/'+that.id
+				})
+			}
+		},
+		onShow() {
+			that.getBanner()
+			that.menuButtonInfo = uni.getMenuButtonBoundingClientRect()
+			that.getInfo()
+		}
+	}
+</script>
+
+<style>
+@import url('@/static/css/course.css')
+</style>

@@ -1,0 +1,123 @@
+page{
+	background-color: #f8f8f8;
+}
+.option{
+	height:80rpx;
+	line-height: 80rpx;
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: flex-start;
+	justify-content:space-around;
+}
+.option text{
+	display: block;
+	height:68rpx;
+	line-height: 68rpx;
+	font-size: 28rpx;
+	color:#434343;
+}
+.option>view{
+	position: relative;
+	height:80rpx;
+	line-height: 80rpx;
+}
+
+.option .active text{
+	font-size: 32rpx;
+	color:#111111;
+}
+
+.option image{
+	height: 6rpx;
+	width: 38rpx;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -19rpx;
+	display: none;
+}
+.option .active image{
+	display: block;
+}
+.content{
+	padding: 0 32rpx;
+	margin-top: 40rpx;
+}
+
+.content .row{
+	background-color: #FFFFFF;
+	border-radius: 10rpx;
+	padding: 0 32rpx;
+	line-height: 128rpx;
+	color:#111111;
+	font-size: 32rpx;
+	margin-bottom: 30rpx;
+}
+
+.content .row .title{
+	line-height: 128rpx;
+	height: 128rpx;
+}
+
+.content .row .left text{
+	color:#666666;
+	margin-left: 20rpx;
+}
+
+.content .row .right text{
+	display: inline-block;
+	height: 48rpx;
+	line-height: 48rpx;
+	font-size: 24rpx;
+	color:#46d17e;
+	background-color:#e0f8e9;
+	padding: 0 26rpx;
+	border-radius: 29rpx;
+}
+
+.content .row .right image{
+	width: 48rpx;
+	height: 48rpx;
+	vertical-align: middle;
+	transform: rotate(0deg);
+	transition: transform 0.7s;
+}
+
+.content>.active>.title image{
+	width: 48rpx;
+	height: 48rpx;
+	vertical-align: middle;
+	transform: rotate(180deg);
+}
+.content .row .entry{
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.7s;
+}
+.content>.active .entry{
+	max-height: 800rpx;
+}
+.content .row .entry .sub{
+	line-height: 128rpx;
+	height: 128rpx;
+	color:#111111;
+	font-size: 30rpx;
+}
+
+.content .row .entry .sub .left .part{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: initial;
+}
+
+.content .row .entry .sub .left .part .part2{
+	font-size: 24rpx;
+	color:#666666;
+	margin-top: 20rpx;
+}
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+
+video{
+	width: 100%;
+}
+.content{
+	padding: 0 20rpx;
+}
+.title{
+	font-size: 38rpx;
+	font-weight: bold;
+	padding: 20rpx;
+}
+.cate text{
+	height: 60rpx;
+	line-height: 60rpx;
+	background-color: #0E8A39;
+	color: #FFFFFF;
+	border-radius: 10rpx;
+	padding: 0 10rpx;
+	font-size: 30rpx;
+}
+
