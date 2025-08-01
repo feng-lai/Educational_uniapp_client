@@ -1,4 +1,7 @@
-
+[日本語](README-jp.md)
+[العربية](README-ar.md)
+[Português](README-pt.md)
+[Español](README-es.md)
 # 🎓 Educational UniApp Client
 
 This is a mobile client for an educational platform developed using **UniApp**, a cross-platform front-end framework powered by Vue.js. It provides a seamless user experience for students and teachers to access educational content, manage coursework, and engage with learning materials.
